@@ -38,17 +38,20 @@ ul {
 .top-navBar
 {
     left: 270px;
-    margin-left: 270px;
+    right: 0;
+    width: 100%;
     background-color: var(--skin-color);
 }
-  .navbar {
-      /* background-color: #333; */
-      padding: 15px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: black;
-      box-shadow: 0px 4px 4px 4px #ccc;
+.navbar {
+    /* background-color: #333; */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    position: sticky;
+    
+      /* box-shadow: 0px 4px 4px 4px #ccc; */
   }
 
   .search-box {
@@ -144,7 +147,8 @@ height: 50px;
        align-items: center;
        height: fit-content;
        background-color:var(--bg-black-100);
-       border: 1px solid red;
+       margin-top: 50px;
+       /* border: 1px solid red;     */
    }
 
    .card {
@@ -224,10 +228,33 @@ height: 50px;
 }
 
 .section-title {
+    display: flex;
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 60px;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    align-items: center;
 
+}
+
+.section-title  button
+{
+    background-color: var(--skin-color);
+    border-radius: 15px;
+    border: none;
+    width: 100px;
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+    height: 4rem;
+}
+.section-title button:hover
+{
+    color: var(--bg-black-100);
+   transition: all 0.5s ease;
+   transform: scale(1.05);
+    
 }
 
 .section-title h2 {

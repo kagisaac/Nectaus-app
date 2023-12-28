@@ -15,13 +15,13 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->timestamp('email_verified_at')->nullable();             
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
         });
     }
-
+    
     /**
      * Reverse the migrations.
      */
@@ -30,3 +30,10 @@ return new class extends Migration
         Schema::dropIfExists('users');
     }
 };
+// $table->string('photo')->nullable();
+// $table->string('Phone');
+// $table->string('userName');
+// $table->string('address')->nullable();
+
+// $table->enum('role', ['admin', 'officer', 'user'])->default('user');
+// $table->enum('status', ['active', 'inactive'])->default('active');
