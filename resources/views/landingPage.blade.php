@@ -10,6 +10,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="/css/dashStyle.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <nav id="main-navbar">
     <div class="log"><img src="{{asset('assets/nectausProLog2.png')}}" alt="log"> </div>
@@ -66,11 +70,11 @@
 
         <!-- ///////////////   profile cards      /////////////////// -->
         <div class="profile-cards">
-            <div class="flip-card">
+            <div class="flip-card" style="width:300px;height:300px;">
                 <div class="flip-card-inner">
-                    <div class="flip-card-front">
+                    <div class="flip-card-front" style="margin-top: -1.25rem;">
                         <img src="/assets/cardBees.jpg" alt="Avatar" style="width:300px;height:300px;">
-                        <h2>beekeeping </h2>
+                        <!-- <h2>beekeeping </h2> -->
                     </div>
                     <div class="flip-card-back">
                         <h1>Modern beekeeping</h1>
@@ -80,11 +84,11 @@
                     </div>
                 </div>
             </div>
-            <div class="flip-card">
+            <div class="flip-card" style="width:300px;height:300px;">
                 <div class="flip-card-inner">
-                    <div class="flip-card-front">
+                    <div class="flip-card-front" style="margin-top: -1.25rem;">
                         <img src="/assets/beesPollination2.avif" alt="Avatar" style="width:300px;height:300px;">
-                        <h2>Pollination service</h2>
+                        <!-- <h2>Pollination service</h2> -->
                     </div>
                     <div class="flip-card-back">
                         <h1>Bee Pollination</h1>
@@ -97,11 +101,11 @@
             <div class="card-box">
 
 
-                <div class="flip-card">
+                <div class="flip-card" style="width:300px;height:300px;">
                     <div class="flip-card-inner">
-                        <div class="flip-card-front " id="front">
+                        <div class="flip-card-front " id="front" style="margin-top: -1.25rem;">
                             <img src="/assets/beeProduct.jpg" alt="Avatar" style="width:300px;height:300px;">
-                            <h2>Bee Product</h2>
+                            <!-- <h2>Bee Product</h2> -->
 
                         </div>
                         <div class="flip-card-back">
@@ -282,6 +286,99 @@
 
             </div>
         </div>
+        <!-- ====contact section start ==== -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15 padd-15">
+                        <!-- <h2>Contact us</h2> -->
+                    </div>
+                </div>
+                <h3 class="contact-title padd-15"> DO YOU HAVE ANY QUESTION?</h3>
+                <h4 class="contact-sub-title padd-15"> We Are At Your Services</h4>
+                <div class="row">
+                    <!-- ====contact item start ==== -->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-phone"></i></div>
+                        <h4>Call Us On</h4>
+                        <p>+250782290301</p>
+                    </div>
+                    <!-- ====contact item end ==== -->
+                    <!-- ====contact item start ==== -->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                        <h4>Office</h4>
+                        <p>Kigali,Rwanda</p>
+                    </div>
+                    <!-- ====contact item end ==== -->
+                    <!-- ====contact item start ==== -->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p>kagisaac103@gmail.com</p>
+                    </div>
+                    <!-- ====contact item end ==== -->
+                    <!-- ====contact item start ==== -->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                        <h4>Website</h4>
+                        <p>www.nectaus.com</p>
+                    </div>
+                    <!-- ====contact item end ==== -->
+
+                </div>
+
+                <h3 class="contact-title padd-15"> SEND ME AN EMAIL?</h3>
+                <h4 class="contact-sub-title padd-15"> I Respond to Each And Every Message Asap!</h4>
+                <!-- ====contact form start ==== -->
+                <div class="row">
+                    <div class="contact-form padd-15">
+                        <div class="row">
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name" id="contact-input">
+                                </div>
+                            </div>
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email" id="contact-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Subject" id="contact-input">
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <textarea name="" class="form-control" placeholder="Text Your Message"
+                                        id="contact-input"></textarea>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- ====contact form ends ==== -->
+
+
+                </div>
+        </section>
+        <!-- ====contact section ends ==== -->
+
 
         <!-- ///////////////   testimonial      /////////////////// -->
 
@@ -297,7 +394,7 @@
                     </div> -->
         <!-- ///////////////   paterner      /////////////////// -->
 
-        <div class="patener-section">
+        <!-- <div class="patener-section">
             <div class="patener-content">
                 <h3>We Raise and Keep Exceptional Bees</h3>
                 <p>by combining generations of commercial beekeeping experience with cutting-edge
@@ -306,7 +403,7 @@
             <div class="work-annimation">
                 <h1>image</h1>
             </div>
-        </div>
+        </div> -->
     </div>
 
 
