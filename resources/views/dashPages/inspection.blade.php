@@ -4,92 +4,68 @@
 <!-- ====contact section start ==== -->
 <section class="contact section" id="contact">
     <div class="container">
-        <div class="row">
-            <div class="section-title padd-15 padd-15">
-                <h2>My Inspection</h2>
-            </div>
-        </div>
-        <h3 class="contact-title padd-15"> DO YOU HAVE ANY QUESTION?</h3>
-        <h4 class="contact-sub-title padd-15"> I'm At Your Services</h4>
-        <div class="row">
-            <!-- ====contact item start ==== -->
-            <div class="contact-info-item padd-15">
-                <div class="icon"><i class="fa fa-phone"></i></div>
-                <h4>Call Us On</h4>
-                <p>+250782290301</p>
-            </div>
-            <!-- ====contact item end ==== -->
-            <!-- ====contact item start ==== -->
-            <div class="contact-info-item padd-15">
-                <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-                <h4>Office</h4>
-                <p>Kigali,Rwanda</p>
-            </div>
-            <!-- ====contact item end ==== -->
-            <!-- ====contact item start ==== -->
-            <div class="contact-info-item padd-15">
-                <div class="icon"><i class="fa fa-envelope"></i></div>
-                <h4>Email</h4>
-                <p>kagisaac103@gmail.com</p>
-            </div>
-            <!-- ====contact item end ==== -->
-            <!-- ====contact item start ==== -->
-            <div class="contact-info-item padd-15">
-                <div class="icon"><i class="fa fa-globe-europe"></i></div>
-                <h4>Website</h4>
-                <p>www.urwuri.com</p>
-            </div>
-            <!-- ====contact item end ==== -->
+
+        <!-- <main class="table" id="customers_table"> -->
+        <div class="section-title padd-15">
+            <h2>Inspection Report</h2>
+            <a href="/addInspections"><button> Add info</button></a>
 
         </div>
 
-        <h3 class="contact-title padd-15"> SEND ME AN EMAIL?</h3>
-        <h4 class="contact-sub-title padd-15"> I Respond to Each And Every Message Asap!</h4>
-        <!-- ====contact form start ==== -->
-        <div class="row">
-            <div class="contact-form padd-15">
-                <div class="row">
-                    <div class="form-item col-6 padd-15">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Name">
-                        </div>
-                    </div>
-                    <div class="form-item col-6 padd-15">
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-item col-12 padd-15">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject">
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-item col-12 padd-15">
-                        <div class="form-group">
-                            <textarea name="" class="form-control" id="" placeholder="Text Your Message"></textarea>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-item col-12 padd-15">
-                        <button type="submit" class="btn">Send Message</button>
-                    </div>
-                </div>
-
-
+        <!-- <section class="table__header">
+            <h1>Inspection Report</h1>
+            <div class="input-group">
+                <input type="search" placeholder="Search Data...">
+                <img src="images/search.png" alt="">
             </div>
-            <!-- ====contact form ends ==== -->
 
+            <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label>Export As &nbsp; &#10140;</label>
+                    <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
+                    <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt=""></label>
+                    <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt=""></label>
+                    <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
+                </div>
+            </div>
+        </section> -->
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Hive SIN <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Hive Temperature <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> humidity<span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Hive Weight<span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Health Status <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> deseases <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Hive Notice<span class="icon-arrow">&UpArrow;</span></th>
+                    </tr>
+                </thead>
+                <tbody>
 
-        </div>
+                    @foreach(optional($inspectionData)->all() as $inspects)
+                    <tr>
+                        <td> {{ $inspects->hiveSN}}</td>
+                        <td>{{ $inspects->temperature}}C</td>
+                        <td> {{ $inspects->humidity}} </td>
+                        <td> {{ $inspects->weight}}</td>
+                        <td>
+                            <p class="status {{ $inspects->healthStatus}}">{{ $inspects->healthStatus}}</p>
+                        </td>
+                        <td> <strong>{{ $inspects->deseases}} </strong></td>
+                        <td> {{ $inspects->summary}}</td>
+                    </tr>
+                    @endforeach
+
+                </tbody>
+            </table>
+        </section>
+        <script src="/js/tableScript.js"></script>
+        <!-- </main> -->
+    </div>
 </section>
 <!-- ====contact section ends ==== -->
 

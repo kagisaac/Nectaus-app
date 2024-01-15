@@ -28,6 +28,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus a reprehenderit cum, vero
                         quos maxime aspernatur id ipsam in quae, quaerat, asperiores consectetur officiis quasi
                         fugiat harum libero repudiandae non.
+                        <div><a href="{{route('display.displaySingleHive',['hiveId' => $hive])}}">view</a></div>
                     </div>
 
                 </div>

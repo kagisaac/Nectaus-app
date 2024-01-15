@@ -416,7 +416,7 @@
 
             <h2>Address</h2>
             4225 S Highland Ave. <br>
-            1-855-4-BEEHERO <br>
+            1-855-4-Nectaus app <br>
             Del Rey, CA 93616 <br>
             hello@beehero.io
 
@@ -445,7 +445,7 @@
         </div>
     </div>
     <div class="sub-footer">
-        <p>© 2023 BeeHero. All rights reserved.</p>
+        <p>© 2023 Nectaus app. All rights reserved.</p>
     </div>
 </footer>
 <script src="/bootstrap-5.0.2-dist">
