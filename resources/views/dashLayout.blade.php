@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inspection Report</title>
     <title>Document</title>
     <link rel="stylesheet" href="/css/dashStyle.css">
+    <link rel="stylesheet" href="/css/tableStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,7 +20,7 @@
     <div class="navbar">
         <div class="search-box">
             <span>
-                <input type="text" class="search-input" placeholder="Search...">
+                <input type="text" class="search-input" placeholder="Search..." name="nav-searchbox">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </span>
         </div>

@@ -2,30 +2,6 @@
 
 @section('content')
 
-<!-- ======== home dash highlight ===== -->
-<div class="dashboard">
-    <div class="card number-hives">
-        <h2>120</h2>
-        <p>Number of Bee Hives</p>
-    </div>
-
-    <div class="card inspection-status">
-        <h2>Good</h2>
-        <p>Inspection Status</p>
-    </div>
-
-    <div class="card hive-temperature">
-        <h2>25°C</h2>
-        <p>Hive Temperature</p>
-    </div>
-
-    <div class="card hive-humidity">
-        <h2>60%</h2>
-        <p>Hive Humiditydd</p>
-    </div>
-</div>
-
-<!-- ======== End home dash highlight ===== -->
 
 <!-- ====About section start ==== -->
 <section class="about section " id="about">
@@ -35,6 +11,37 @@
                 <h2>Hive Insight</h2>
             </div>
         </div>
+        <!-- ======== home dash highlight ===== -->
+        <div class="row"></div>
+        <div class="dashboard ">
+            <div class="card number-hives ">
+                <h2>{{ $hivesCount }}</h2>
+                <p>Number Of Hives</p>
+            </div>
+            <div class="card healthyHive ">
+                <h2>{{ $healthyHiveCount }}</h2>
+                <p>Healthy Hives</p>
+            </div>
+            <div class="card CriticalHive">
+                <h2>{{$criticalHiveCount}}</h2>
+                <p>Critical Hives</p>
+            </div>
+
+
+
+            <div class="card hive-temperature">
+                <h2>{{$newTemperature}}°C</h2>
+                <p>Hive Temperature</p>
+            </div>
+
+            <div class="card number-hives">
+                <h2>{{$totalHiveWeight}} Kg</h2>
+                <p>Total Hive Weight</p>
+            </div>
+        </div>
+
+        <!-- ======== End home dash highlight ===== -->
+
         <div class="row">
             <div class="about-content padd-15">
                 <div class="row">
@@ -178,117 +185,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="education padd-15">
-                        <h3 class="title">Education</h3>
-                        <div class="row">
-                            <div class="timeline-box padd-15">
-                                <div class="timeline shadow-dark">
-                                    <!-- ======timeline item===== -->
-                                    <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                        <h3 class="timeline-date">
-                                            <i class="fa fa-calendar"></i> 2021-2024
 
-                                        </h3>
-                                        <h4 class="timeline-title">BSc in Computer Software Engineering
-                                            <br>(University of Rwanda)
-                                        </h4>
-                                        <p class="timeline-text">
-                                            Lisque persius interesset his et, in quot quidam persequeris
-                                            vim, ad mea essent possim iriure.
-                                            Lisque persius interesset his et, in quot quidam persequeris
-                                            vim, ad mea essent possim iriure.
-                                        </p>
-                                    </div>
-                                    <!-- ======timeline item===== -->
-                                    <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                        <h3 class="timeline-date">
-                                            <i class="fa fa-calendar"></i> 2023-2023
-                                        </h3>
-                                        <h4 class="timeline-title">IOT, Software and Hardware development
-                                            <br>(STES Group ltd)
-                                        </h4>
-                                        <p class="timeline-text">
-                                            Lisque persius interesset his et, in quot quidam persequeris
-                                            vim, ad mea essent possim iriure.
-                                            Lisque persius interesset his et, in quot quidam persequeris
-                                            vim, ad mea essent possim iriure.
-                                        </p>
-                                    </div>
-                                    <!-- ======timeline item===== -->
-                                    <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                        <h3 class="timeline-date">
-                                            <i class="fa fa-calendar"></i> 2023-2023
-                                        </h3>
-                                        <h4 class="timeline-title">Google IT Automation with Python
-                                            Professional Certificate <br>(Coursera) </h4>
-                                        <p class="timeline-text">
-                                            Lisque persius interesset his et, in quot quidam persequeris
-                                            vim, ad mea essent possim iriure.
-                                            Lisque persius interesset his et, in quot quidam persequeris
-                                            vim, ad mea essent possim iriure.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="experience padd-15">
-                        <h3 class="title">Experience</h3>
-                        <div class="row">
-                            <div class="timeline-box padd-15">
-                                <div class="timeline shadow-dark">
-                                    <!-- ======timeline item===== -->
-                                    <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                        <h3 class="timeline-date">
-                                            <i class="fa fa-calendar"></i> 2023-Present
-                                        </h3>
-                                        <h4 class="timeline-title">Software Developer <br>(STES Group) </h4>
-                                        <p class="timeline-text">
-                                            Lisque persius interesset his et, in quot quidam persequeris
-                                            vim, ad mea essent possim iriure.
-                                            Lisque persius interesset his et, in quot quidam persequeris
-                                            vim, ad mea essent possim iriure.
-                                        </p>
-                                    </div>
-                                    <!-- ======timeline item===== -->
-                                    <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                        <h3 class="timeline-date">
-                                            <i class="fa fa-calendar"></i> 2020-2021
-                                        </h3>
-                                        <h4 class="timeline-title">IT Support Specialist <br>(KHENZ LTD)
-                                        </h4>
-                                        <p class="timeline-text">
-                                            Lisque persius interesset his et, in quot quidam persequeris
-                                            vim, ad mea essent possim iriure.
-                                            Lisque persius interesset his et, in quot quidam persequeris
-                                            vim, ad mea essent possim iriure.
-                                        </p>
-                                    </div>
-                                    <!-- ======timeline item===== -->
-                                    <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                        <h3 class="timeline-date">
-                                            <i class="fa fa-calendar"></i> 2023-Present
-                                        </h3>
-                                        <h4 class="timeline-title">Urwuri Project <br>(STES Group) </h4>
-                                        <p class="timeline-text">
-                                            Lisque persius interesset his et, in quot quidam persequeris
-                                            vim, ad mea essent possim iriure.
-                                            Lisque persius interesset his et, in quot quidam persequeris
-                                            vim, ad mea essent possim iriure.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
             </div>
         </div>

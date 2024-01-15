@@ -4,6 +4,7 @@ use App\Http\Controllers\HiveController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserDashboardController;
+use App\Http\Controllers\InspectionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,16 +30,22 @@ Route::get('/dash', function () {
 Route::get('/home', function () {
     return view('dashPages.home');
 });
-// Route::get('/hive', function () {
-//     return view('dashPages.hives');
-// });
-Route::get('/inspections', function () {
-    return view('dashPages.inspection');
+Route::get('/singleHive', function () {
+    return view('dashPages.singleHive');
 });
 
+Route::get('/addInspections', function () {
+    return view('formModels.inspectionModel');
+});
+Route::get('/inspections',[InspectionController::class,'displayInspection'])->name('display.inspection');
+Route::post('/addInspection',[InspectionController::class, 'createInspection'])->name('create.inspection');
+
+Route::get('/hive/{hiveId}/singleHive', [HiveController::class, 'displaySingleHive' ])->name('display.displaySingleHive');
+Route::get('/home', [HiveController::class, 'displayHivedash' ])->name('display.DashCards');
 Route::get('/hive', [HiveController::class, 'displayHive' ])->name('display.Hive');
 Route::get('/addHive', [HiveController::class, 'addHive' ])->name('add.MyHive');
 Route::post('/addHive', [HiveController::class, 'createHive' ])->name('create.Hive');
+// Route::get('/addInspection', [HiveController::class, 'addHive' ])->name('add.MyHive');
 
 
 Route::get('/dashboard', function () {

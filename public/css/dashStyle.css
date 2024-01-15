@@ -144,15 +144,20 @@ height: 50px;
    .dashboard {
        display: flex;
        justify-content: space-around;
+       flex-wrap: wrap;
+       gap: 1rem;
+       padding: 0;
+       /* border: 1px solid red; */
        align-items: center;
        height: fit-content;
-       background-color:var(--bg-black-100);
-       margin-top: 50px;
+       /* background-color:var(--bg-black-100); */
+       /* margin-top: 50px; */
+       margin-bottom: 50px;
        /* border: 1px solid red;     */
    }
 
    .card {
-       background-color: #fff;
+       /* background-color: #86e49d; */
        padding: 20px;
        border-radius: 8px;
        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -167,27 +172,27 @@ height: 50px;
 
    .card p {
        margin: 10px 0 0;
-       color: #777;
+       color: #000;
    }
 
    /* Example styles for different stats */
-   .number-hives {
-       background-color: #48a54c;
+   .healthyHive {
+       background-color: #86e49d;
        color: #fff;
    }
 
-   .inspection-status {
-       background-color: #3498db;
+   .number-hives {
+       background-color: #6fcaea;
        color: #fff;
    }
 
    .hive-temperature {
-       background-color: #f39c12;
+       background-color: #ebc474;
        color: #fff;
    }
 
-   .hive-humidity {
-       background-color: #e74c3c;
+   .CriticalHive {
+       background-color: #d893a3;
        color: #fff;
    }
 /* <<<<<<<<<<<< end of dash highlights  >>>>>>>>>>>>>*/
