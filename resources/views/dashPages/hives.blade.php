@@ -24,11 +24,23 @@
 
                             <i class="fa fa-brands fa-hive fa-bounce fa-xl"></i>
                         </div>
-                        <h4>{{$hive->hiveOwner}}</h4>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus a reprehenderit cum, vero
-                        quos maxime aspernatur id ipsam in quae, quaerat, asperiores consectetur officiis quasi
-                        fugiat harum libero repudiandae non.
-                        <div><a href="{{route('display.displaySingleHive',['hiveId' => $hive])}}">view</a></div>
+                        <div class=" card-row-data">
+
+                            <p>Hive Serial Number:
+                            </p>
+                            <h4>{{$hive->hiveSN}}</h4>
+
+
+                        </div>
+                        <div class=" card-row-data">
+                            <P>Hive Dimension: </P>
+
+                            <h4>{{$hive->dimensions}}</h4>
+
+                        </div>
+                        <a href="{{route('display.displaySingleHive',['hiveId' => $hive])}}"><i class="fa-solid fa-eye"
+                                style="color: #FFD43B;"></i><b>View more</b></a>
+
                     </div>
 
                 </div>

@@ -24,7 +24,7 @@
             <li>Services</li>
             <li>Mobile App</li>
             <li>News</li>
-            <li>Login</li>
+            <li><a href="/auth" style="text-decoration: none; color:black">Login</a></li>
 
 
 
@@ -39,28 +39,24 @@
 
         <div class="backgroung-oppasity">
             <div class="hero-section-content">
-                <h1>Get Premium Bees Habbitant condition</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos laborum, libero eaque obcaecati
-                    accusamus
-                    aperiam voluptate blanditiis voluptatum accusantium voluptas earum quam officiis perspiciatis iure
-                    dolores
-                    ducimus iste ad sequi?</p>
+                <h1>Get a healthy BeeHive Habbitant condition</h1>
+                <p>Glance at essential information. This concise overview includes details such as the hive's serial
+                    number, name, owner, and physical dimensions. Additionally, it highlights the weight of the hive,
+                    its current location, and any specific descriptions provided.</p>
                 <Span>
-                    <button>Learn More</button> <button>Learn More</button>
+                    <button>Learn More</button>
                 </Span>
             </div>
         </div>
 
         <div class="backgroung-oppasity">
             <div class="hero-section-content">
-                <h1>Pollinate Your Crops With Precision</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos laborum, libero eaque obcaecati
-                    accusamus
-                    aperiam voluptate blanditiis voluptatum accusantium voluptas earum quam officiis perspiciatis iure
-                    dolores
-                    ducimus iste ad sequi?</p>
+                <h1>Inspect Your Hive By Fingure Click</h1>
+                <p>Glance at essential information. This concise overview includes details such as the hive's serial
+                    number, name, owner, and physical dimensions. Additionally, it highlights the weight of the hive,
+                    its current location, and any specific descriptions provided.</p>
                 <Span>
-                    <button>Learn More</button> <button>Learn More</button>
+                    <button>Learn More</button>
                 </Span>
             </div>
         </div>
@@ -145,7 +141,7 @@
             <div class="work-content">
 
                 <h6>OUR SERVICES</h6>
-                <h1>We Raise and Keep Exceptional Bees</h1>
+                <h3>We Raise and Keep Exceptional Bees</h3>
                 <p>By combining generations of commercial beekeeping experience with cutting-edge technology.</p>
             </div>
             <div class="work-cards">
@@ -188,7 +184,7 @@
                     </div>
 
                 </div>
-                <div class="workCard">
+                <!-- <div class="workCard">
                     <h3>Honey Production</h3>
                     <img src="/assets/beeProduct.jpg" alt="" style="height: 200px; width: 300px;">
                     <div class="workCard-text-content">
@@ -226,7 +222,7 @@
                         <button>learn more</button>
                     </div>
 
-                </div>
+                </div> -->
 
 
             </div>
@@ -239,9 +235,9 @@
             <div class="product-content-cards">
                 <div class="product-content ">
 
-                    <h6>OUR SERVICES</h6>
-                    <h1>We Raise and Keep Exceptional Bees</h1>
-                    <p>By combining generations of commercial beekeeping experience with cutting-edge technology.</p>
+                    <h6>OUR PRODUCT</h6>
+                    <h3>Nectaus Project Offers </h3>
+                    <!-- <p>By combining generations of commercial beekeeping experience with cutting-edge technology.</p> -->
                 </div>
                 <div class="product-cards">
                     <div class="productCard">
@@ -254,6 +250,7 @@
                                 <li>Actuation & Automation </li>
                                 <li>Future prediction</li>
                             </ul>
+                            <button>learn more</button>
                         </div>
                     </div>
                     <div class="productCard">
@@ -266,6 +263,7 @@
                                 <li>Actuation & Automation </li>
                                 <li>Future prediction</li>
                             </ul>
+                            <button>learn more</button>
                         </div>
                     </div>
                     <div class="productCard">
@@ -278,6 +276,7 @@
                                 <li>Actuation & Automation </li>
                                 <li>Future prediction</li>
                             </ul>
+                            <button>learn more</button>
                         </div>
                     </div>
 
@@ -383,19 +382,7 @@
         <!-- ///////////////   testimonial      /////////////////// -->
 
         <!-- <div class=" testimonial-section">
-                        <div class="work-content">
-                            <h3>We Raise and Keep Exceptional Bees</h3>
-                            <p>by combining generations of commercial beekeeping experience with cutting-edge
-                                technology.</p>
-                        </div>
-                        <div class="work-annimation">
-                            <h1>image</h1>
-                        </div>
-                    </div> -->
-        <!-- ///////////////   paterner      /////////////////// -->
-
-        <!-- <div class="patener-section">
-            <div class="patener-content">
+            <div class="work-content">
                 <h3>We Raise and Keep Exceptional Bees</h3>
                 <p>by combining generations of commercial beekeeping experience with cutting-edge
                     technology.</p>
@@ -404,6 +391,9 @@
                 <h1>image</h1>
             </div>
         </div> -->
+        <!-- ///////////////   paterner      /////////////////// -->
+
+
     </div>
 
 

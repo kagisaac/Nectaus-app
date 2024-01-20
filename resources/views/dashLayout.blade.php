@@ -62,11 +62,11 @@
         <li><a href="/home"><i class="fa-solid fa-house"></i>Home</a></li>
         <li><a href="/hive"><i class="fa-brands fa-hive"></i>My Hives</a></li>
         <li><a href="/inspections"><i class="fa-solid fa-pen-to-square"></i>Inspection</a></li>
-        <li><a href="#portfolio"><i class="fa-regular fa-message"></i>Message</a></li>
+        <!-- <li><a href="#portfolio"><i class="fa-regular fa-message"></i>Message</a></li>
         <li><a href="#contact"><i class="fa-solid fa-people-roof"></i>Community</a></li>
-        <li><a href="#contact"><i class="fa-solid fa-newspaper"></i>News</a></li>
-        <li><a href="#contact"><i class="fa-solid fa-gear"></i>Settings</a></li>
-        <li><a href="#contact"><i class="fa-solid fa-right-from-bracket"></i>LogOut</a></li>
+        <li><a href="#contact"><i class="fa-solid fa-newspaper"></i>News</a></li> -->
+        <li><a href="/userProfile"><i class="fa-solid fa-gear"></i>Settings</a></li>
+        <li><a href="/"><i class="fa-solid fa-right-from-bracket"></i>LogOut</a></li>
 
 
 
