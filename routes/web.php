@@ -5,6 +5,8 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserDashboardController;
 use App\Http\Controllers\InspectionController;
+use App\Http\Controllers\nectausAuthController;
+use Laravel\Fortify\Fortify;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,8 +32,43 @@ Route::get('/dash', function () {
 Route::get('/home', function () {
     return view('dashPages.home');
 });
+Route::get('/auth', function () {
+    return view('nectausAuth.loginAndSignup');
+});
+
+// Route::post('/register', [nectausAuthController::class, 'register'])->name('register.user');
+Route::post('/auth', [nectausAuthController::class, 'register'])->name('register.user');
+
+// Route::post('/auth', [nectausAuthController::class, 'login'])->name('login.user');
+
+// ////////////////////////  auth \\\\\\\\\
+
+
+//   Fortify::loginView(function () {
+//     return view('auth.login');
+//   });
+
+//    Fortify::registerView(function () {
+//     return view('auth.register');
+//   });
+
+
+
+
+
+
+
+// ////////////////////////  auth \\\\\\\\\
+
+
+
+
+
 Route::get('/singleHive', function () {
     return view('dashPages.singleHive');
+});
+Route::get('/userProfile', function () {
+    return view('dashPages.settings');
 });
 
 Route::get('/addInspections', function () {

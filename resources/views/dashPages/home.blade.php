@@ -46,18 +46,13 @@
             <div class="about-content padd-15">
                 <div class="row">
                     <div class="about-text padd-15">
-                        <h3>Quick Summary of the<span>Hive Condition</span></h3>
-                        <p>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent
-                            possim iriure.
-                            Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent
-                            possim iriure.
-                            Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent
-                            possim iriure.
-                            Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent
-                            possim iriure.
-                            Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent
-                            possim iriure.
-                        </p>
+                        <h3>Quick Summary of the <span>Hive Condition</span></h3>
+                        <p>Glance at essential information. This concise overview includes details such as the hive's
+                            serial number, name, owner, and physical dimensions. Additionally, it highlights the weight
+                            of the hive, its current location, and any specific descriptions provided. The summary is
+                            designed for easy interpretation, allowing beekeepers to swiftly grasp the key attributes of
+                            each hive at a glance. This user-friendly dashboard empowers beekeepers with the necessary
+                            insights to make informed decisions and efficiently manage their apiaries.</p>
                     </div>
                 </div>
                 <div class="row">

@@ -789,12 +789,11 @@ h3.my-profession {
 }
 
 .service .service-item .service-item-inner {
-    background-color: var(--bg-black-100);
+    background-color:var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
     border-radius: 10px;
     padding: 30px 15px;
     text-align: center;
-    transition: all 0.3s ease;
 }
 
 .service .service-item .service-item-inner:hover {
@@ -817,7 +816,22 @@ h3.my-profession {
     color: var(--skin-color);
     transition: all 0.3s ease;
 }
+.card-row-data
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-between;
+    align-items: center;
+    /* gap: 1rem; */
+    /* border: 1px solid red; */
+    /* gap: 10rem; */
 
+}
+.card-row-data p
+{
+    font-size: medium;
+    font-weight: bold;
+}
 .service .service-item .service-item-inner:hover .icon {
     background: var(--skin-color);
 }

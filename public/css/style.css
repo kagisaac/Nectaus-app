@@ -66,7 +66,8 @@ gap:5rem
     height: 100vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20%;
     align-items: center;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -244,7 +245,12 @@ button:hover
         gap: 1rem;
 }
 .work-content h6{
-    font-weight: bold;
+   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: x-large;
+        font-weight: bold;
     text-decoration:2px underline var(--skin-color);
 }
 .work-content h3
@@ -322,7 +328,7 @@ border-radius: 4px;
 
 .advt-section
 {
-    background-image: url(../assets/beePolli.jpg);
+    background-image: url(../assets/pollibee3.jpg);
     background-size: cover;
     color: var(--text-colour);
     text-transform: capitalize;
@@ -336,6 +342,22 @@ border-radius: 4px;
     font-size:xx-large;
     width: 300px;
     height: 450px;
+
+}
+.product-section  .product-content-cards .product-content 
+ 
+{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-section .product-content-cards .product-content h6
+{
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: 2px underline var(--skin-color);
 
 }
 .product-cards
